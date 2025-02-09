@@ -4,17 +4,26 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background("#FF5722");
   //circle(x, y, diameter)
-  circle(200,200,300);
-  circle(150,150,60);
-  circle(250, 150, 60);
+  fill("#03A9F4")
+  circle(200,200,300); //rosto
+  fill('white');
+  circle(150,150,60); //olho esquerdo
+  circle(250, 150, 60); //olho direito
   
   //line(x1, y1, x2, y2)
-  line(150, 270, 250, 270)
+  line(150, 270, 250, 270); //boca
 
   //triangle(x1, y1, x2, y2, x3, y3)
-  triangle(200, 180, 170, 220, 220, 220)
+  fill('#3F51B5');
+  triangle(200, 180, 170, 220, 220, 220); //nariz
+
+  line(123,115, 178, 133); //sobrancelha esquerda
+  line(225, 116, 279, 106); //sobrancelha direita
+
+  circle(150, 150, 10); // pupila esquerda
+  circle(250, 150, 10); // pupila direita
 
   if (mouseIsPressed){
     console.log(mouseX, mouseY)
